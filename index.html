@@ -221,13 +221,13 @@
       <nav>
         <ul class="navbar">
           <li class="nav-link">
-            <a href="/#home">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li class="nav-link">
-            <a href="/#videos"> Classes</a>
+            <a href="#videos"> Classes</a>
           </li>
           <li class="nav-link">
-            <a href="/#music">Playlits</a>
+            <a href="#music">Playlits</a>
           </li>
           <li class="nav-link">
             <button class="nav-button">Subscribe</button>
@@ -380,7 +380,7 @@
       let subscribeButton = document.querySelector(".nav-button");
       subscribeButton.addEventListener("click", subscribe);
 
-      document.querySelectorAll('a[href^="/#"]').forEach((anchor) => {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
           document.querySelector(this.getAttribute("href")).scrollIntoView({
